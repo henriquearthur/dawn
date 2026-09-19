@@ -1,0 +1,177 @@
+/*
+ * Generated from DTCG token sources. Do not edit by hand.
+ * Run pnpm build after changing tokens/.
+ */
+
+/* Source: tokens/core/theme.tokens.json */
+:where([data-dawn]) {
+  --dawn-accent-hue: 275;
+}
+
+/* Source: tokens/core/typography.tokens.json */
+:where([data-dawn]) {
+  --dawn-font-mono: 'Geist Mono', ui-monospace, monospace;
+  --dawn-font-sans: Geist, ui-sans-serif, system-ui, sans-serif;
+  --dawn-font-serif: Georgia, serif;
+  --dawn-letter-spacing-body: var(--dawn-tracking-normal);
+  --dawn-tracking-normal: -0.011em;
+  --dawn-tracking-tight: calc(var(--dawn-tracking-normal) - 0.025em);
+  --dawn-tracking-tighter: calc(var(--dawn-tracking-normal) - 0.05em);
+  --dawn-tracking-wide: calc(var(--dawn-tracking-normal) + 0.025em);
+  --dawn-tracking-wider: calc(var(--dawn-tracking-normal) + 0.05em);
+  --dawn-tracking-widest: calc(var(--dawn-tracking-normal) + 0.1em);
+}
+
+/* Source: tokens/core/geometry.tokens.json */
+:where([data-dawn]) {
+  --dawn-radius-2xl: calc(var(--dawn-radius-base) + 8px);
+  --dawn-radius-base: 0.75rem;
+  --dawn-radius-lg: var(--dawn-radius-base);
+  --dawn-radius-md: calc(var(--dawn-radius-base) - 2px);
+  --dawn-radius-sm: calc(var(--dawn-radius-base) - 4px);
+  --dawn-radius-xl: calc(var(--dawn-radius-base) + 4px);
+  --dawn-radius-xs: calc(var(--dawn-radius-base) - 6px);
+}
+
+/* Source: tokens/core/motion.tokens.json */
+:where([data-dawn]) {
+  --dawn-motion-duration-rise: 0.26s;
+  --dawn-motion-duration-shimmer: 1.6s;
+  --dawn-motion-easing-rise: cubic-bezier(0.22, 1, 0.36, 1);
+  --dawn-motion-easing-shimmer: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* Source: tokens/themes/light.tokens.json */
+:where([data-dawn]) {
+  --dawn-color-action-accent: oklch(0.952 0.03 var(--dawn-accent-hue));
+  --dawn-color-action-accent-foreground: oklch(0.44 0.098 var(--dawn-accent-hue));
+  --dawn-color-action-primary: oklch(0.67 0.17 var(--dawn-accent-hue));
+  --dawn-color-action-primary-foreground: oklch(0.995 0.008 275);
+  --dawn-color-action-secondary: oklch(0.958 0.004 230);
+  --dawn-color-action-secondary-foreground: oklch(0.24 0.012 240);
+  --dawn-color-border-default: oklch(0.915 0.005 230);
+  --dawn-color-border-input: oklch(0.9 0.006 230);
+  --dawn-color-feedback-danger: oklch(0.58 0.2 25);
+  --dawn-color-feedback-danger-foreground: oklch(0.99 0 0);
+  --dawn-color-focus-ring: var(--dawn-color-action-primary);
+  --dawn-color-surface-canvas: oklch(0.982 0.002 230);
+  --dawn-color-surface-floating: oklch(1 0 0);
+  --dawn-color-surface-hover: oklch(0.955 0.006 230);
+  --dawn-color-surface-muted: oklch(0.963 0.004 230);
+  --dawn-color-surface-raised: oklch(1 0 0);
+  --dawn-color-text-muted: oklch(0.53 0.017 240);
+  --dawn-color-text-on-floating: oklch(0.181 0.012 240);
+  --dawn-color-text-on-raised: oklch(0.181 0.012 240);
+  --dawn-color-text-primary: oklch(0.181 0.012 240);
+  --dawn-elevation-2xl: 0px 32px 64px -16px hsl(230 30% 10% / 0.24);
+  --dawn-elevation-2xs: 0px 1px 2px -1px hsl(230 30% 10% / 0.05);
+  --dawn-elevation-base: 0px 1px 2px -1px hsl(230 30% 10% / 0.07), 0px 4px 10px -3px hsl(230 30% 10% / 0.07);
+  --dawn-elevation-lg: 0px 4px 8px -3px hsl(230 30% 10% / 0.08), 0px 12px 28px -6px hsl(230 30% 10% / 0.12);
+  --dawn-elevation-md: 0px 2px 4px -2px hsl(230 30% 10% / 0.07), 0px 6px 16px -4px hsl(230 30% 10% / 0.09);
+  --dawn-elevation-sm: 0px 1px 2px -1px hsl(230 30% 10% / 0.06), 0px 2px 6px -2px hsl(230 30% 10% / 0.06);
+  --dawn-elevation-xl: 0px 8px 16px -6px hsl(230 30% 10% / 0.1), 0px 24px 48px -12px hsl(230 30% 10% / 0.16);
+  --dawn-elevation-xs: 0px 1px 3px -1px hsl(230 30% 10% / 0.07);
+}
+
+/* Source: tokens/themes/dark.tokens.json */
+:where([data-dawn][data-dawn-theme='dark']) {
+  --dawn-color-action-accent: oklch(0.29 0.062 var(--dawn-accent-hue));
+  --dawn-color-action-accent-foreground: oklch(0.88 0.07 var(--dawn-accent-hue));
+  --dawn-color-action-primary: oklch(0.7 0.16 var(--dawn-accent-hue));
+  --dawn-color-action-primary-foreground: oklch(0.175 0.035 275);
+  --dawn-color-action-secondary: oklch(0.246 0.013 240);
+  --dawn-color-action-secondary-foreground: oklch(0.968 0.003 230);
+  --dawn-color-border-default: oklch(0.278 0.014 240);
+  --dawn-color-border-input: oklch(0.298 0.015 240);
+  --dawn-color-feedback-danger: oklch(0.63 0.19 25);
+  --dawn-color-feedback-danger-foreground: oklch(0.99 0 0);
+  --dawn-color-focus-ring: var(--dawn-color-action-primary);
+  --dawn-color-surface-canvas: oklch(0.162 0.009 240);
+  --dawn-color-surface-floating: oklch(0.212 0.012 240);
+  --dawn-color-surface-hover: oklch(0.246 0.013 240);
+  --dawn-color-surface-muted: oklch(0.238 0.012 240);
+  --dawn-color-surface-raised: oklch(0.196 0.011 240);
+  --dawn-color-text-muted: oklch(0.695 0.015 240);
+  --dawn-color-text-on-floating: oklch(0.968 0.003 230);
+  --dawn-color-text-on-raised: oklch(0.968 0.003 230);
+  --dawn-color-text-primary: oklch(0.968 0.003 230);
+  --dawn-elevation-2xl: 0px 32px 64px -16px hsl(240 40% 2% / 0.8);
+  --dawn-elevation-2xs: 0px 1px 2px -1px hsl(240 40% 2% / 0.4);
+  --dawn-elevation-base: 0px 1px 2px -1px hsl(240 40% 2% / 0.5), 0px 4px 10px -3px hsl(240 40% 2% / 0.5);
+  --dawn-elevation-lg: 0px 4px 8px -3px hsl(240 40% 2% / 0.55), 0px 12px 28px -6px hsl(240 40% 2% / 0.6);
+  --dawn-elevation-md: 0px 2px 4px -2px hsl(240 40% 2% / 0.5), 0px 6px 16px -4px hsl(240 40% 2% / 0.55);
+  --dawn-elevation-sm: 0px 1px 2px -1px hsl(240 40% 2% / 0.5), 0px 2px 6px -2px hsl(240 40% 2% / 0.45);
+  --dawn-elevation-xl: 0px 8px 16px -6px hsl(240 40% 2% / 0.6), 0px 24px 48px -12px hsl(240 40% 2% / 0.7);
+  --dawn-elevation-xs: 0px 1px 3px -1px hsl(240 40% 2% / 0.45);
+}
+
+/* Source: tokens/accents/blue.tokens.json */
+:where([data-dawn][data-dawn-accent='blue']) {
+  --dawn-accent-hue: 250;
+}
+
+/* Source: tokens/accents/cyan.tokens.json */
+:where([data-dawn][data-dawn-accent='cyan']) {
+  --dawn-accent-hue: 210;
+}
+
+/* Source: tokens/accents/green.tokens.json */
+:where([data-dawn][data-dawn-accent='green']) {
+  --dawn-accent-hue: 150;
+}
+
+/* Source: tokens/accents/indigo.tokens.json */
+:where([data-dawn][data-dawn-accent='indigo']) {
+  --dawn-accent-hue: 275;
+}
+
+/* Source: tokens/accents/orange.tokens.json */
+:where([data-dawn][data-dawn-accent='orange']) {
+  --dawn-accent-hue: 55;
+}
+
+/* Source: tokens/accents/pink.tokens.json */
+:where([data-dawn][data-dawn-accent='pink']) {
+  --dawn-accent-hue: 335;
+}
+
+/* Source: tokens/accents/purple.tokens.json */
+:where([data-dawn][data-dawn-accent='purple']) {
+  --dawn-accent-hue: 305;
+}
+
+/* Source: tokens/accents/yellow.tokens.json */
+:where([data-dawn][data-dawn-accent='yellow']) {
+  --dawn-accent-hue: 90;
+  --dawn-color-action-primary-foreground: oklch(0.22 0.025 90);
+}
+
+@keyframes dawn-rise {
+  from {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dawn-shimmer {
+  0%, 100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where([data-dawn]) *,
+  :where([data-dawn]) *::before,
+  :where([data-dawn]) *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

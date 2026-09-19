@@ -1,0 +1,26 @@
+{
+  "$description": "The pink accent overlay.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/dawn.css",
+        "selector": ":where([data-dawn][data-dawn-accent='pink'])",
+        "order": 200
+      }
+    }
+  },
+  "accent": {
+    "$type": "number",
+    "hue": {
+      "$value": 335,
+      "$description": "Hue for the pink accent.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "name": "--dawn-accent-hue"
+          }
+        }
+      }
+    }
+  }
+}

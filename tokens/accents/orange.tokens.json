@@ -1,0 +1,26 @@
+{
+  "$description": "The orange accent overlay.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/dawn.css",
+        "selector": ":where([data-dawn][data-dawn-accent='orange'])",
+        "order": 200
+      }
+    }
+  },
+  "accent": {
+    "$type": "number",
+    "hue": {
+      "$value": 55,
+      "$description": "Hue for the orange accent.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "name": "--dawn-accent-hue"
+          }
+        }
+      }
+    }
+  }
+}

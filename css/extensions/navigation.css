@@ -1,0 +1,28 @@
+/*
+ * Generated from DTCG token sources. Do not edit by hand.
+ * Run pnpm build after changing tokens/.
+ */
+
+/* Source: tokens/extensions/navigation/light.tokens.json */
+:where([data-dawn]) {
+  --dawn-color-navigation-action-accent: oklch(0.952 0.03 var(--dawn-accent-hue));
+  --dawn-color-navigation-action-accent-foreground: oklch(0.42 0.098 var(--dawn-accent-hue));
+  --dawn-color-navigation-action-primary: var(--dawn-color-action-primary);
+  --dawn-color-navigation-action-primary-foreground: oklch(0.995 0.008 275);
+  --dawn-color-navigation-border: oklch(0.918 0.005 230);
+  --dawn-color-navigation-foreground: oklch(0.38 0.014 240);
+  --dawn-color-navigation-ring: var(--dawn-color-action-primary);
+  --dawn-color-navigation-surface: oklch(0.994 0.002 230);
+}
+
+/* Source: tokens/extensions/navigation/dark.tokens.json */
+:where([data-dawn][data-dawn-theme='dark']) {
+  --dawn-color-navigation-action-accent: oklch(0.29 0.062 var(--dawn-accent-hue));
+  --dawn-color-navigation-action-accent-foreground: oklch(0.9 0.07 var(--dawn-accent-hue));
+  --dawn-color-navigation-action-primary: var(--dawn-color-action-primary);
+  --dawn-color-navigation-action-primary-foreground: oklch(0.175 0.035 275);
+  --dawn-color-navigation-border: oklch(0.248 0.013 240);
+  --dawn-color-navigation-foreground: oklch(0.72 0.014 240);
+  --dawn-color-navigation-ring: var(--dawn-color-action-primary);
+  --dawn-color-navigation-surface: oklch(0.142 0.008 240);
+}

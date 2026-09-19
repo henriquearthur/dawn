@@ -1,0 +1,162 @@
+{
+  "$description": "Workflow extension for the dark theme.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/extensions/workflow.css",
+        "selector": ":where([data-dawn][data-dawn-theme='dark'])",
+        "order": 20
+      }
+    }
+  },
+  "workflow": {
+    "status": {
+      "$type": "color",
+      "backlog": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.68,
+            0.017,
+            240
+          ]
+        },
+        "$description": "Backlog status."
+      },
+      "progress": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.78,
+            0.14,
+            75
+          ]
+        },
+        "$description": "In-progress status."
+      },
+      "done": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.74,
+            0.15,
+            155
+          ]
+        },
+        "$description": "Completed status."
+      },
+      "paused": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.78,
+            0.14,
+            82
+          ]
+        },
+        "$description": "Paused status."
+      }
+    },
+    "priority": {
+      "1": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.7,
+            0.185,
+            25
+          ]
+        },
+        "$description": "Priority 1."
+      },
+      "2": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.77,
+            0.14,
+            58
+          ]
+        },
+        "$description": "Priority 2."
+      },
+      "3": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.73,
+            0.11,
+            245
+          ]
+        },
+        "$description": "Priority 3."
+      },
+      "4": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.68,
+            0.03,
+            240
+          ]
+        },
+        "$description": "Priority 4."
+      },
+      "$type": "color",
+      "none": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.55,
+            0.012,
+            240
+          ]
+        },
+        "$description": "No priority."
+      }
+    },
+      "tint": {
+        "$type": "number",
+        "chroma-default": {
+        "$value": 0.035,
+        "$description": "Default chroma for caller-provided tint hues."
+      },
+      "light": {
+        "surface-lightness": {
+          "$value": 0.955,
+          "$description": "Light-mode tint surface lightness."
+        },
+        "surface-chroma-multiplier": {
+          "$value": 1,
+          "$description": "Light-mode tint surface chroma multiplier."
+        },
+        "text-lightness": {
+          "$value": 0.44,
+          "$description": "Light-mode tint text lightness."
+        },
+        "text-chroma-multiplier": {
+          "$value": 4,
+          "$description": "Light-mode tint text chroma multiplier."
+        }
+      },
+      "dark": {
+        "surface-lightness": {
+          "$value": 0.288,
+          "$description": "Dark-mode tint surface lightness."
+        },
+        "surface-chroma-multiplier": {
+          "$value": 1.6,
+          "$description": "Dark-mode tint surface chroma multiplier."
+        },
+        "text-lightness": {
+          "$value": 0.84,
+          "$description": "Dark-mode tint text lightness."
+        },
+        "text-chroma-multiplier": {
+          "$value": 2.9,
+          "$description": "Dark-mode tint text chroma multiplier."
+        }
+      }
+    }
+  }
+}

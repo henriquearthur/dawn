@@ -1,0 +1,10 @@
+{
+  "$schema": "https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/",
+  "$description": "Dawn token source. Files ending in .tokens.json use the DTCG 2025.10 format and Dawn CSS metadata.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "source": "Horizon app.css",
+      "version": "0.1.0"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/*
+ * Generated from DTCG token sources. Do not edit by hand.
+ * Run pnpm build after changing tokens/.
+ */
+
+/* Source: tokens/extensions/workflow/light.tokens.json */
+:where([data-dawn]) {
+  --dawn-workflow-priority-1: oklch(0.56 0.2 25);
+  --dawn-workflow-priority-2: oklch(0.63 0.16 55);
+  --dawn-workflow-priority-3: oklch(0.56 0.11 240);
+  --dawn-workflow-priority-4: oklch(0.56 0.03 240);
+  --dawn-workflow-priority-none: oklch(0.68 0.01 240);
+  --dawn-workflow-status-backlog: oklch(0.6 0.017 240);
+  --dawn-workflow-status-done: oklch(0.58 0.14 155);
+  --dawn-workflow-status-paused: oklch(0.62 0.14 82);
+  --dawn-workflow-status-progress: oklch(0.66 0.14 72);
+  --dawn-workflow-tint-chroma-default: 0.035;
+  --dawn-workflow-tint-dark-surface-chroma-multiplier: 1.6;
+  --dawn-workflow-tint-dark-surface-lightness: 0.288;
+  --dawn-workflow-tint-dark-text-chroma-multiplier: 2.9;
+  --dawn-workflow-tint-dark-text-lightness: 0.84;
+  --dawn-workflow-tint-light-surface-chroma-multiplier: 1;
+  --dawn-workflow-tint-light-surface-lightness: 0.955;
+  --dawn-workflow-tint-light-text-chroma-multiplier: 4;
+  --dawn-workflow-tint-light-text-lightness: 0.44;
+}
+
+/* Source: tokens/extensions/workflow/dark.tokens.json */
+:where([data-dawn][data-dawn-theme='dark']) {
+  --dawn-workflow-priority-1: oklch(0.7 0.185 25);
+  --dawn-workflow-priority-2: oklch(0.77 0.14 58);
+  --dawn-workflow-priority-3: oklch(0.73 0.11 245);
+  --dawn-workflow-priority-4: oklch(0.68 0.03 240);
+  --dawn-workflow-priority-none: oklch(0.55 0.012 240);
+  --dawn-workflow-status-backlog: oklch(0.68 0.017 240);
+  --dawn-workflow-status-done: oklch(0.74 0.15 155);
+  --dawn-workflow-status-paused: oklch(0.78 0.14 82);
+  --dawn-workflow-status-progress: oklch(0.78 0.14 75);
+  --dawn-workflow-tint-chroma-default: 0.035;
+  --dawn-workflow-tint-dark-surface-chroma-multiplier: 1.6;
+  --dawn-workflow-tint-dark-surface-lightness: 0.288;
+  --dawn-workflow-tint-dark-text-chroma-multiplier: 2.9;
+  --dawn-workflow-tint-dark-text-lightness: 0.84;
+  --dawn-workflow-tint-light-surface-chroma-multiplier: 1;
+  --dawn-workflow-tint-light-surface-lightness: 0.955;
+  --dawn-workflow-tint-light-text-chroma-multiplier: 4;
+  --dawn-workflow-tint-light-text-lightness: 0.44;
+}

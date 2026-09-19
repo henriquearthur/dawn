@@ -1,0 +1,78 @@
+{
+  "$description": "Radius scale derived from Horizon's single 0.75rem radius decision.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/dawn.css",
+        "selector": ":where([data-dawn])",
+        "order": 20
+      }
+    }
+  },
+  "radius": {
+    "$type": "dimension",
+    "xs": {
+      "$value": { "value": 0.375, "unit": "rem" },
+      "$description": "Base radius minus 6px.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-radius-base) - 6px)"
+          }
+        }
+      }
+    },
+    "sm": {
+      "$value": { "value": 0.5, "unit": "rem" },
+      "$description": "Base radius minus 4px.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-radius-base) - 4px)"
+          }
+        }
+      }
+    },
+    "md": {
+      "$value": { "value": 0.625, "unit": "rem" },
+      "$description": "Base radius minus 2px.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-radius-base) - 2px)"
+          }
+        }
+      }
+    },
+    "base": {
+      "$value": { "value": 0.75, "unit": "rem" },
+      "$description": "Primary rounding decision."
+    },
+    "lg": {
+      "$value": "{radius.base}",
+      "$description": "Alias for the primary rounding decision."
+    },
+    "xl": {
+      "$value": { "value": 1, "unit": "rem" },
+      "$description": "Base radius plus 4px.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-radius-base) + 4px)"
+          }
+        }
+      }
+    },
+    "2xl": {
+      "$value": { "value": 1.25, "unit": "rem" },
+      "$description": "Base radius plus 8px.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-radius-base) + 8px)"
+          }
+        }
+      }
+    }
+  }
+}

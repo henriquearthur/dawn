@@ -1,0 +1,22 @@
+/*
+ * Generated from DTCG token sources. Do not edit by hand.
+ * Run pnpm build after changing tokens/.
+ */
+
+/* Source: tokens/extensions/data-visualization/light.tokens.json */
+:where([data-dawn]) {
+  --dawn-color-data-series-1: var(--dawn-color-action-primary);
+  --dawn-color-data-series-2: oklch(0.64 0.13 170);
+  --dawn-color-data-series-3: oklch(0.62 0.12 240);
+  --dawn-color-data-series-4: oklch(0.68 0.15 60);
+  --dawn-color-data-series-5: oklch(0.6 0.16 330);
+}
+
+/* Source: tokens/extensions/data-visualization/dark.tokens.json */
+:where([data-dawn][data-dawn-theme='dark']) {
+  --dawn-color-data-series-1: var(--dawn-color-action-primary);
+  --dawn-color-data-series-2: oklch(0.74 0.13 170);
+  --dawn-color-data-series-3: oklch(0.7 0.12 250);
+  --dawn-color-data-series-4: oklch(0.78 0.14 72);
+  --dawn-color-data-series-5: oklch(0.72 0.16 330);
+}

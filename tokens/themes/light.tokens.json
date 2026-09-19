@@ -1,0 +1,655 @@
+{
+  "$description": "Default Dawn light theme, preserving Horizon light values.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/dawn.css",
+        "selector": ":where([data-dawn])",
+        "order": 100
+      }
+    }
+  },
+  "color": {
+    "$type": "color",
+    "surface": {
+      "canvas": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.982,
+            0.002,
+            230
+          ]
+        },
+        "$description": "Primary application surface."
+      },
+      "raised": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            1,
+            0,
+            0
+          ]
+        },
+        "$description": "Raised surface such as a card."
+      },
+      "floating": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            1,
+            0,
+            0
+          ]
+        },
+        "$description": "Floating surface such as a popover."
+      },
+      "muted": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.963,
+            0.004,
+            230
+          ]
+        },
+        "$description": "Low-emphasis surface."
+      },
+      "hover": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.955,
+            0.006,
+            230
+          ]
+        },
+        "$description": "Neutral hover surface."
+      }
+    },
+    "text": {
+      "primary": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.181,
+            0.012,
+            240
+          ]
+        },
+        "$description": "Default foreground color."
+      },
+      "on-raised": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.181,
+            0.012,
+            240
+          ]
+        },
+        "$description": "Foreground on a raised surface."
+      },
+      "on-floating": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.181,
+            0.012,
+            240
+          ]
+        },
+        "$description": "Foreground on a floating surface."
+      },
+      "muted": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.53,
+            0.017,
+            240
+          ]
+        },
+        "$description": "Low-emphasis foreground color."
+      }
+    },
+    "action": {
+      "primary": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.67,
+            0.17,
+            275
+          ]
+        },
+        "$description": "Primary action color.",
+        "$extensions": {
+          "com.henriquearthur.dawn": {
+            "css": {
+              "value": "oklch(0.67 0.17 var(--dawn-accent-hue))"
+            }
+          }
+        }
+      },
+      "primary-foreground": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.995,
+            0.008,
+            275
+          ]
+        },
+        "$description": "Foreground on the primary action."
+      },
+      "secondary": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.958,
+            0.004,
+            230
+          ]
+        },
+        "$description": "Secondary action color."
+      },
+      "secondary-foreground": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.24,
+            0.012,
+            240
+          ]
+        },
+        "$description": "Foreground on the secondary action."
+      },
+      "accent": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.952,
+            0.03,
+            275
+          ]
+        },
+        "$description": "Accent action surface.",
+        "$extensions": {
+          "com.henriquearthur.dawn": {
+            "css": {
+              "value": "oklch(0.952 0.03 var(--dawn-accent-hue))"
+            }
+          }
+        }
+      },
+      "accent-foreground": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.44,
+            0.098,
+            275
+          ]
+        },
+        "$description": "Foreground on an accent surface.",
+        "$extensions": {
+          "com.henriquearthur.dawn": {
+            "css": {
+              "value": "oklch(0.44 0.098 var(--dawn-accent-hue))"
+            }
+          }
+        }
+      }
+    },
+    "feedback": {
+      "danger": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.58,
+            0.2,
+            25
+          ]
+        },
+        "$description": "Destructive or danger action."
+      },
+      "danger-foreground": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.99,
+            0,
+            0
+          ]
+        },
+        "$description": "Foreground on a danger action."
+      }
+    },
+    "border": {
+      "default": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.915,
+            0.005,
+            230
+          ]
+        },
+        "$description": "Default separator and border color."
+      },
+      "input": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.9,
+            0.006,
+            230
+          ]
+        },
+        "$description": "Input border color."
+      }
+    },
+    "focus": {
+      "ring": {
+        "$value": "{color.action.primary}",
+        "$description": "Focus ring aliases the primary action color."
+      }
+    }
+  },
+  "elevation": {
+    "$type": "shadow",
+    "2xs": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.05
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 1,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 2,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -1,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Elevation 2xs."
+    },
+    "xs": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.07
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 1,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 3,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -1,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Elevation xs."
+    },
+    "sm": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.06
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 1,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 2,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -1,
+            "unit": "px"
+          }
+        },
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.06
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 2,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 6,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -2,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Elevation sm."
+    },
+    "base": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.07
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 1,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 2,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -1,
+            "unit": "px"
+          }
+        },
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.07
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 4,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 10,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -3,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Elevation base."
+    },
+    "md": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.07
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 2,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 4,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -2,
+            "unit": "px"
+          }
+        },
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.09
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 6,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 16,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -4,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Elevation md."
+    },
+    "lg": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.08
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 4,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 8,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -3,
+            "unit": "px"
+          }
+        },
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.12
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 12,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 28,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -6,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Elevation lg."
+    },
+    "xl": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.1
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 8,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 16,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -6,
+            "unit": "px"
+          }
+        },
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.16
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 24,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 48,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -12,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Elevation xl."
+    },
+    "2xl": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.24
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 32,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 64,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -16,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Elevation 2xl."
+    }
+  }
+}
