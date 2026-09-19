@@ -1,0 +1,103 @@
+{
+  "$description": "Typography decisions carried from Horizon without bundling font files.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/dawn.css",
+        "selector": ":where([data-dawn])",
+        "order": 10
+      }
+    }
+  },
+  "font": {
+    "$type": "fontFamily",
+    "sans": {
+      "$value": ["Geist", "ui-sans-serif", "system-ui", "sans-serif"],
+      "$description": "Default interface font stack. Geist is optional."
+    },
+    "serif": {
+      "$value": ["Georgia", "serif"],
+      "$description": "Serif fallback stack."
+    },
+    "mono": {
+      "$value": ["Geist Mono", "ui-monospace", "monospace"],
+      "$description": "Monospace font stack. Geist Mono is optional."
+    }
+  },
+  "tracking": {
+    "$type": "number",
+    "normal": {
+      "$value": -0.011,
+      "$description": "Default interface tracking.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "-0.011em"
+          }
+        }
+      }
+    },
+    "tighter": {
+      "$value": -0.061,
+      "$description": "Normal tracking minus 0.05em.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-tracking-normal) - 0.05em)"
+          }
+        }
+      }
+    },
+    "tight": {
+      "$value": -0.036,
+      "$description": "Normal tracking minus 0.025em.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-tracking-normal) - 0.025em)"
+          }
+        }
+      }
+    },
+    "wide": {
+      "$value": 0.014,
+      "$description": "Normal tracking plus 0.025em.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-tracking-normal) + 0.025em)"
+          }
+        }
+      }
+    },
+    "wider": {
+      "$value": 0.039,
+      "$description": "Normal tracking plus 0.05em.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-tracking-normal) + 0.05em)"
+          }
+        }
+      }
+    },
+    "widest": {
+      "$value": 0.089,
+      "$description": "Normal tracking plus 0.1em.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "value": "calc(var(--dawn-tracking-normal) + 0.1em)"
+          }
+        }
+      }
+    }
+  },
+  "letter-spacing": {
+    "$type": "number",
+    "body": {
+      "$value": "{tracking.normal}",
+      "$description": "Default body letter spacing, aliased to normal tracking."
+    }
+  }
+}

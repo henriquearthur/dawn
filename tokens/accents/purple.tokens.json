@@ -1,0 +1,26 @@
+{
+  "$description": "The purple accent overlay.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/dawn.css",
+        "selector": ":where([data-dawn][data-dawn-accent='purple'])",
+        "order": 200
+      }
+    }
+  },
+  "accent": {
+    "$type": "number",
+    "hue": {
+      "$value": 305,
+      "$description": "Hue for the purple accent.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "name": "--dawn-accent-hue"
+          }
+        }
+      }
+    }
+  }
+}

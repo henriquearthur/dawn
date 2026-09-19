@@ -1,0 +1,42 @@
+{
+  "$description": "The yellow accent overlay.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/dawn.css",
+        "selector": ":where([data-dawn][data-dawn-accent='yellow'])",
+        "order": 200
+      }
+    }
+  },
+  "accent": {
+    "$type": "number",
+    "hue": {
+      "$value": 90,
+      "$description": "Hue for the yellow accent.",
+      "$extensions": {
+        "com.henriquearthur.dawn": {
+          "css": {
+            "name": "--dawn-accent-hue"
+          }
+        }
+      }
+    }
+  },
+  "color": {
+    "$type": "color",
+    "action": {
+      "primary-foreground": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.22,
+            0.025,
+            90
+          ]
+        },
+        "$description": "High-contrast foreground for the yellow primary action."
+      }
+    }
+  }
+}

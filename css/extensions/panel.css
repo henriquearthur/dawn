@@ -1,0 +1,29 @@
+/*
+ * Generated from DTCG token sources. Do not edit by hand.
+ * Run pnpm build after changing tokens/.
+ */
+
+/* Source: tokens/extensions/panel/light.tokens.json */
+:where([data-dawn]) {
+  --dawn-elevation-panel: -18px 0px 48px -20px hsl(230 30% 10% / 0.22);
+  --dawn-motion-duration-panel-in: 0.22s;
+  --dawn-motion-easing-panel-in: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Source: tokens/extensions/panel/dark.tokens.json */
+:where([data-dawn][data-dawn-theme='dark']) {
+  --dawn-elevation-panel: -18px 0px 56px -18px hsl(240 40% 2% / 0.75);
+  --dawn-motion-duration-panel-in: 0.22s;
+  --dawn-motion-easing-panel-in: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@keyframes dawn-panel-in {
+  from {
+    transform: translateX(18px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

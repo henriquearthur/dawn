@@ -1,0 +1,107 @@
+{
+  "$description": "Navigation extension for the light theme.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/extensions/navigation.css",
+        "selector": ":where([data-dawn])",
+        "order": 10
+      }
+    }
+  },
+  "color": {
+    "$type": "color",
+    "navigation": {
+      "surface": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.994,
+            0.002,
+            230
+          ]
+        },
+        "$description": "Navigation surface."
+      },
+      "foreground": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.38,
+            0.014,
+            240
+          ]
+        },
+        "$description": "Navigation foreground."
+      },
+      "action": {
+        "primary": {
+          "$value": "{color.action.primary}",
+          "$description": "Navigation primary action aliases the core primary action."
+        },
+        "primary-foreground": {
+          "$value": {
+            "colorSpace": "oklch",
+            "components": [
+              0.995,
+              0.008,
+              275
+            ]
+          },
+          "$description": "Foreground on the navigation primary action."
+        },
+        "accent": {
+          "$value": {
+            "colorSpace": "oklch",
+            "components": [
+              0.952,
+              0.03,
+              275
+            ]
+          },
+          "$description": "Navigation accent surface.",
+          "$extensions": {
+            "com.henriquearthur.dawn": {
+              "css": {
+                "value": "oklch(0.952 0.03 var(--dawn-accent-hue))"
+              }
+            }
+          }
+        },
+        "accent-foreground": {
+          "$value": {
+            "colorSpace": "oklch",
+            "components": [
+              0.42,
+              0.098,
+              275
+            ]
+          },
+          "$description": "Foreground on the navigation accent surface.",
+          "$extensions": {
+            "com.henriquearthur.dawn": {
+              "css": {
+                "value": "oklch(0.42 0.098 var(--dawn-accent-hue))"
+              }
+            }
+          }
+        }
+      },
+      "border": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.918,
+            0.005,
+            230
+          ]
+        },
+        "$description": "Navigation separator and border."
+      },
+      "ring": {
+        "$value": "{color.action.primary}",
+        "$description": "Navigation focus ring aliases the core primary action."
+      }
+    }
+  }
+}

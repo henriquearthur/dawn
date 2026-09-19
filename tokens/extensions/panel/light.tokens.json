@@ -1,0 +1,86 @@
+{
+  "$description": "Panel extension for the light theme.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/extensions/panel.css",
+        "selector": ":where([data-dawn])",
+        "order": 10,
+        "keyframes": [
+          {
+            "name": "dawn-panel-in",
+            "frames": {
+              "from": {
+                "transform": "translateX(18px)",
+                "opacity": "0"
+              },
+              "to": {
+                "transform": "translateX(0)",
+                "opacity": "1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "elevation": {
+    "$type": "shadow",
+    "panel": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              230,
+              0.3,
+              0.1
+            ],
+            "alpha": 0.22
+          },
+          "offsetX": {
+            "value": -18,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 0,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 48,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -20,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Side-panel elevation."
+    }
+  },
+  "motion": {
+    "duration": {
+      "$type": "duration",
+      "panel-in": {
+        "$value": {
+          "value": 0.22,
+          "unit": "s"
+        },
+        "$description": "Panel entrance duration."
+      }
+    },
+    "easing": {
+      "$type": "cubicBezier",
+      "panel-in": {
+        "$value": [
+          0.32,
+          0.72,
+          0,
+          1
+        ],
+        "$description": "Panel entrance easing."
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$description": "Data visualization extension for the light theme.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/extensions/data-visualization.css",
+        "selector": ":where([data-dawn])",
+        "order": 10
+      }
+    }
+  },
+  "color": {
+    "$type": "color",
+    "data": {
+      "series": {
+        "1": {
+          "$value": "{color.action.primary}",
+          "$description": "First chart series aliases the core primary action."
+        },
+        "2": {
+          "$value": {
+            "colorSpace": "oklch",
+            "components": [
+              0.64,
+              0.13,
+              170
+            ]
+          },
+          "$description": "Second chart series."
+        },
+        "3": {
+          "$value": {
+            "colorSpace": "oklch",
+            "components": [
+              0.62,
+              0.12,
+              240
+            ]
+          },
+          "$description": "Third chart series."
+        },
+        "4": {
+          "$value": {
+            "colorSpace": "oklch",
+            "components": [
+              0.68,
+              0.15,
+              60
+            ]
+          },
+          "$description": "Fourth chart series."
+        },
+        "5": {
+          "$value": {
+            "colorSpace": "oklch",
+            "components": [
+              0.6,
+              0.16,
+              330
+            ]
+          },
+          "$description": "Fifth chart series."
+        }
+      }
+    }
+  }
+}

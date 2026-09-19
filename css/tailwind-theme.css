@@ -1,0 +1,53 @@
+/*
+ * Generated from DTCG token sources. Import after Tailwind CSS.
+ * Dawn remains scoped to [data-dawn].
+ */
+
+@custom-variant dawn-dark (&:where([data-dawn][data-dawn-theme='dark'], [data-dawn][data-dawn-theme='dark'] *));
+
+@theme inline {
+  --color-dawn-action-accent-foreground: var(--dawn-color-action-accent-foreground);
+  --color-dawn-action-accent: var(--dawn-color-action-accent);
+  --color-dawn-action-primary-foreground: var(--dawn-color-action-primary-foreground);
+  --color-dawn-action-primary: var(--dawn-color-action-primary);
+  --color-dawn-action-secondary-foreground: var(--dawn-color-action-secondary-foreground);
+  --color-dawn-action-secondary: var(--dawn-color-action-secondary);
+  --color-dawn-border-default: var(--dawn-color-border-default);
+  --color-dawn-border-input: var(--dawn-color-border-input);
+  --color-dawn-feedback-danger-foreground: var(--dawn-color-feedback-danger-foreground);
+  --color-dawn-feedback-danger: var(--dawn-color-feedback-danger);
+  --color-dawn-focus-ring: var(--dawn-color-focus-ring);
+  --color-dawn-surface-canvas: var(--dawn-color-surface-canvas);
+  --color-dawn-surface-floating: var(--dawn-color-surface-floating);
+  --color-dawn-surface-hover: var(--dawn-color-surface-hover);
+  --color-dawn-surface-muted: var(--dawn-color-surface-muted);
+  --color-dawn-surface-raised: var(--dawn-color-surface-raised);
+  --color-dawn-text-muted: var(--dawn-color-text-muted);
+  --color-dawn-text-on-floating: var(--dawn-color-text-on-floating);
+  --color-dawn-text-on-raised: var(--dawn-color-text-on-raised);
+  --color-dawn-text-primary: var(--dawn-color-text-primary);
+  --font-dawn-mono: var(--dawn-font-mono);
+  --font-dawn-sans: var(--dawn-font-sans);
+  --font-dawn-serif: var(--dawn-font-serif);
+  --radius-dawn-2xl: var(--dawn-radius-2xl);
+  --radius-dawn-base: var(--dawn-radius-base);
+  --radius-dawn-lg: var(--dawn-radius-lg);
+  --radius-dawn-md: var(--dawn-radius-md);
+  --radius-dawn-sm: var(--dawn-radius-sm);
+  --radius-dawn-xl: var(--dawn-radius-xl);
+  --radius-dawn-xs: var(--dawn-radius-xs);
+  --shadow-dawn-2xl: var(--dawn-elevation-2xl);
+  --shadow-dawn-2xs: var(--dawn-elevation-2xs);
+  --shadow-dawn-base: var(--dawn-elevation-base);
+  --shadow-dawn-lg: var(--dawn-elevation-lg);
+  --shadow-dawn-md: var(--dawn-elevation-md);
+  --shadow-dawn-sm: var(--dawn-elevation-sm);
+  --shadow-dawn-xl: var(--dawn-elevation-xl);
+  --shadow-dawn-xs: var(--dawn-elevation-xs);
+  --tracking-dawn-normal: var(--dawn-tracking-normal);
+  --tracking-dawn-tight: var(--dawn-tracking-tight);
+  --tracking-dawn-tighter: var(--dawn-tracking-tighter);
+  --tracking-dawn-wide: var(--dawn-tracking-wide);
+  --tracking-dawn-wider: var(--dawn-tracking-wider);
+  --tracking-dawn-widest: var(--dawn-tracking-widest);
+}

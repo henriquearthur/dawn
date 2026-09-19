@@ -1,0 +1,71 @@
+{
+  "$description": "Panel extension for the dark theme.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/extensions/panel.css",
+        "selector": ":where([data-dawn][data-dawn-theme='dark'])",
+        "order": 20
+      }
+    }
+  },
+  "elevation": {
+    "$type": "shadow",
+    "panel": {
+      "$value": [
+        {
+          "color": {
+            "colorSpace": "hsl",
+            "components": [
+              240,
+              0.4,
+              0.02
+            ],
+            "alpha": 0.75
+          },
+          "offsetX": {
+            "value": -18,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 0,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 56,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -18,
+            "unit": "px"
+          }
+        }
+      ],
+      "$description": "Side-panel elevation."
+    }
+  },
+  "motion": {
+    "duration": {
+      "$type": "duration",
+      "panel-in": {
+        "$value": {
+          "value": 0.22,
+          "unit": "s"
+        },
+        "$description": "Panel entrance duration."
+      }
+    },
+    "easing": {
+      "$type": "cubicBezier",
+      "panel-in": {
+        "$value": [
+          0.32,
+          0.72,
+          0,
+          1
+        ],
+        "$description": "Panel entrance easing."
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$description": "Generic motion tokens and keyframes. Component-specific panel motion is an extension.",
+  "$extensions": {
+    "com.henriquearthur.dawn": {
+      "css": {
+        "output": "css/dawn.css",
+        "selector": ":where([data-dawn])",
+        "order": 30,
+        "reducedMotion": true,
+        "keyframes": [
+          {
+            "name": "dawn-rise",
+            "frames": {
+              "from": {
+                "transform": "translateY(5px)",
+                "opacity": "0"
+              },
+              "to": {
+                "transform": "translateY(0)",
+                "opacity": "1"
+              }
+            }
+          },
+          {
+            "name": "dawn-shimmer",
+            "frames": {
+              "0%, 100%": {
+                "opacity": "0.45"
+              },
+              "50%": {
+                "opacity": "0.85"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "motion": {
+    "duration": {
+      "$type": "duration",
+      "rise": {
+        "$value": { "value": 0.26, "unit": "s" },
+        "$description": "Duration for a small upward entrance."
+      },
+      "shimmer": {
+        "$value": { "value": 1.6, "unit": "s" },
+        "$description": "Duration for the shimmer cycle."
+      }
+    },
+    "easing": {
+      "$type": "cubicBezier",
+      "rise": {
+        "$value": [0.22, 1, 0.36, 1],
+        "$description": "Emphasized entrance easing."
+      },
+      "shimmer": {
+        "$value": [0.42, 0, 0.58, 1],
+        "$description": "CSS ease-in-out expressed as a cubic bezier."
+      }
+    }
+  }
+}
